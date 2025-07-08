@@ -14,4 +14,21 @@ public class Main {
             System.out.println("i = " + i);
         }
     }
+    //write a  method that takes in a string and returns the string reversed
+    public static String reverseString(String str) {
+        String reversed = "";
+        test(str);
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+        return reversed;
+    }
+
+    public static String test(String str) {
+        String reversed = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+        return reversed;
+    }
 }
