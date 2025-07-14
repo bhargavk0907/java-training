@@ -8,6 +8,40 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
+
+        Car bhargavCar = new Car(); // default constructor
+       System.out.println("Bhargav's car: " + bhargavCar.getMake() + " " + bhargavCar.getModel() + ", Year: " + bhargavCar.getYear() + ", Price: $" + bhargavCar.getPrice());
+
+
+        int x = 10;
+        double y = 20.99;
+
+        int z = (int)y;
+
+        System.out.println("Value of z: " + z);
+
+
+        System.out.println("Value of x: " + x);
+        System.out.println("Value of y: " + y);
+
+        char ch = 'A';
+        String str = String.valueOf(ch);
+        System.out.println(str); // Output: A
+
+        String string = "ABBB";
+        char t = string.charAt(0); // 'A'
+        char[] chars = string.toCharArray();
+        // sout chars
+        for (char c : chars) {
+            System.out.println(c);
+        }
+        System.out.println(t);
+
+
+
+
+
+
         for (int i = 1; i <= 5; i++) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
