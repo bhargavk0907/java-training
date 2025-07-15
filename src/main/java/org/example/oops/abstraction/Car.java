@@ -42,4 +42,10 @@ public class Car extends Vehicle{
     public void start() {
         System.out.println("Car is starting");
     }
+
+    //Run time polymorphism
+    @Override
+    public void stop(String type) {
+        System.out.println( "My Car is stopping");
+    }
 }
