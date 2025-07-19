@@ -1,6 +1,6 @@
 package org.example.oops.abstraction;
 
-abstract class Vehicle {
+ abstract class Vehicle {
     public abstract void start() ;
 
     public void stop(String type) {
@@ -8,6 +8,8 @@ abstract class Vehicle {
 
         //
     }
+
+
 
 
 

@@ -20,6 +20,8 @@ public class Inheritence {
        cat.eat();
         cat.sleep();
 
+        Methods methods = new Methods();
+
     }
 
 

@@ -1,6 +1,6 @@
 package org.example.oops.abstraction;
 
-public class Car extends Vehicle{
+ public class Car extends Vehicle{
 
     private String model;
     private String color;
@@ -8,6 +8,10 @@ public class Car extends Vehicle{
     public Car(String model, String color) {
         this.model = model;
         this.color = color;
+    }
+
+    public String getDetails() {
+        return "Car Model: " + model + ", Color: " + color;
     }
 
     public Car() {
@@ -48,4 +52,6 @@ public class Car extends Vehicle{
     public void stop(String type) {
         System.out.println( "My Car is stopping");
     }
+
+
 }
