@@ -1,5 +1,7 @@
 package org.example.operators;
 
+import org.example.staticcl.AppConstants;
+
 public class Operators {
 
     public static void main(String[] args) {
@@ -41,7 +43,7 @@ public class Operators {
         if(!(m>n)){
             System.out.println("n is not greater than m");
         } else {
-            System.out.println("m is greater than n");
+            System.out.println("m is greater than n + " + AppConstants.APP_AUTHOR);
         }
     }
 }
