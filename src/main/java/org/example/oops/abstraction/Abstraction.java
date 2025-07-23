@@ -4,6 +4,8 @@ import java.util.*;
 
 public class Abstraction {
 
+    
+
     public   static void main(String[] args) {
         // Create a Car object
         Car car = new Car("Toyota", "Red");

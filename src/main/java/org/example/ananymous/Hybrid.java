@@ -2,6 +2,7 @@ package org.example.ananymous;
 
 public class Hybrid {
 
+
     public void display() {
         System.out.println("This is a hybrid plant.");
 
@@ -15,6 +16,7 @@ public class Hybrid {
 
         // Call the grow method of the anonymous class
         tress.grow();
+        tress.display();
 
         Creepers creeper = new Creepers() {
             @Override
@@ -27,4 +29,13 @@ public class Hybrid {
 
 
     }
+
+
+    class CurryLeaves extends Tress{
+        @Override
+        public void grow() {
+            System.out.println("The curry leaves tree is growing.");
+        }
+    }
+
 }

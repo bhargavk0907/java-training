@@ -11,6 +11,8 @@ public class AppConstants {
     public static final String APP_LICENSE = "MIT License";
     public static final String APP_WEBSITE = "https://example.com";
 
+    public static final int CREDIT_CARD = 1;
+
 
 
 
