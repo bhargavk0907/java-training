@@ -16,7 +16,7 @@ public class FilesMain {
             System.out.println("Path: " + file.getAbsolutePath());
 
 
-            BufferedWriter bw = new BufferedWriter(new FileWriter("data2.txt"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter("data1.txt"));
             bw.write("Hello, world!");
             bw.newLine();
             bw.write("Another line.");
@@ -32,6 +32,15 @@ public class FilesMain {
                 System.out.println(line);
             }
             br.close();
+
+
+            BufferedWriter bw1 = new BufferedWriter(new FileWriter("data1.txt", true));
+            bw1.newLine();
+            bw1.write("Read and Write");
+            bw1.close();
+
+
+
 
 
         }catch (Exception e) {
