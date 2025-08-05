@@ -51,6 +51,46 @@ public class MainSetApp {
         System.out.println("TreeSet contents: " + treeSet);
 
 
+        //
+        Address address = new Address("123 Main St", "Springfield", "IL");
+        Address address2 = new Address("456 Elm St", "Springfield", "IL");
+        Customer customer1 = new Customer("Mahesh", 25, address);
+        Customer customer2 = new Customer("Bhavya", 25, address2);
+        Customer customer3 = new Customer("Sreeja", 25, address2);
+
+        Set<Customer> customerSet = new HashSet<>();
+
+        customerSet.add(customer1);
+        customerSet.add(customer2);
+        customerSet.add(customer3);
+
+        CustomerService customerService = new CustomerService();
+
+
+
+        for (Customer customer : customerSet) {
+
+            customerService.addCustomer(customer);
+
+        }
+
+        customer1.setAge(24);
+
+        customerService.updateCustomer(customer1);
+
+        customerService.removeCustomer(customer2);
+
+      Customer sreeja =    customerService.findCustomerByName("Sreeja");
+
+        System.out.println("Found Customer: " + sreeja);
+
+
+
+
+
+
+
+
 
         //| Method                            | What It Does                  |
         //| --------------------------------- | ----------------------------- |

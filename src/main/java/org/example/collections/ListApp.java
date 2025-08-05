@@ -107,6 +107,7 @@ public class ListApp {
 
         System.out.println("Updated List Elements: " + list);
 
+        list.add(5, "Kiwi"); // Adding an element at index 5
 
 
         for(String fruit: list) {
@@ -159,6 +160,13 @@ public class ListApp {
         System.out.println("Numbers List: " + numbers);
 
         System.out.println("First Element: " + numbers.get(0)); // Accessing the first element
+
+
+        List<String> stringList = new ArrayList<>();
+
+        //stringList.add
+
+
 
 
 
