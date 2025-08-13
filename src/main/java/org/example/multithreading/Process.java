@@ -21,20 +21,36 @@ public class Process extends Thread{
     @Override
     public void run() {
         try {
-            if (name.equals("batch600") || name.equals("batch800")) {
-                Thread.sleep(1000);
-            }
+
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        for (Integer i : numbers) {
 
+        if(name.equalsIgnoreCase("batch600")){
 
-            System.out.println("Process: " + name + " "+ i);
+            print();
+        }else {
+            for (Integer i : numbers) {
 
+                System.out.println("Process: " + name + " " + i);
+
+            }
         }
     }
+
+    public void print(){
+
+        System.out.println("Process: " + name + " is printing numbers");
+        for (Integer i : numbers) {
+            System.out.println("Process: " + name + " "+ i);
+        }
+        System.out.println("Process: " + name + " finished printing numbers");
+
+
+
+    }
+
 
 
 

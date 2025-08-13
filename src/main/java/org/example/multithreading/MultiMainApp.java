@@ -34,7 +34,13 @@ public class MultiMainApp {
 
             List<Integer> batch = numbers.subList(start, end);
 
+            Process process = new Process("batch" + i, batch);
+           // process.start();
+
             Runnable task = new Process("batch" + i , batch);
+
+
+
             Thread thread = new Thread(task);
             threads.add(thread);
         }
@@ -47,6 +53,7 @@ public class MultiMainApp {
             if ((i + 1) % 5 == 0) {
                 for (int j = i - 4; j <= i; j++) {
                     threads.get(j).join();
+
                 }
             }
 
