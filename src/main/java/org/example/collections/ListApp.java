@@ -97,10 +97,10 @@ public class ListApp {
         System.out.println("List Elements:" + list);
 
 
-        list.addFirst("Orange"); // Adding an element at the beginning
+        //list.addFirst("Orange"); // Adding an element at the beginning
 
 
-        list.addLast("Grapes"); // Adding an element at the end
+        //list.addLast("Grapes"); // Adding an element at the end
 
         list.add(3, "Mango"); // Adding an element at index 3
 
